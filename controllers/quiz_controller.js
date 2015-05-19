@@ -95,8 +95,3 @@ exports.update = function(req, res) {
 		}
 		);
 };
-// guarda en DB los campos pregunta y respuesta de quiz
-quiz.save({fields: ["pregunta", "respuesta"]}).then(function(){
-	res.redirect('/quizes');
-})  //Redirección HTTP (URL relativo) lista de preguntas
-};
